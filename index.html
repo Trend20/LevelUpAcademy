@@ -103,14 +103,14 @@
 
         <section id="credentials">
             <div class="cred-image">
-                <img src="./assets/img/lets-level-up.png" alt="lets-level-up">
+                <img src="./assets/img/lets-level-up.png" alt="lets-level-up" style="max-width: 80%;">
             </div>
             <div class="details">
                 <h3>Lets LEVEL UP?</h3>
                 <form action="" id="form">
                     <div class="names">
-                        <input type="text" placeholder="your first name">
-                        <input type="text" placeholder="your first name">
+                        <input type="text" id="first" placeholder="your first name">
+                        <input type="text" id="last" placeholder="your first name">
                     </div>
                     <div id="number">
                         <input type="text" placeholder="your phone number">
@@ -119,10 +119,34 @@
                         <input type="email" placeholder="your email ID">
                     </div>
                     <div class="select">
-                        <button></button>
+                        <button id="grade-btn">
+                            <label for="grade">Select Grade</label>
+                            <select id = "grade">
+                                <option value = "A"></option>
+                                <option value = "B">B</option>
+                                <option value = "C">C</option>
+                                <option value = "D">D</option>
+                              </select>
+                        </button>
+                        <button id="subject-btn">
+                            <label for="subject">Select Subject</label>
+                            <select id = "subject">
+                                <option value = "Coding"></option>
+                                <option value = "Android Developemnt">Android Developemnt</option>
+                                <option value = "Web Design">Web Design</option>
+                                <option value = "Project Management">Project Management</option>
+                              </select>
+                        </button>
                     </div>
+                    <button id="details-button">Book a FREE TRIAL</button>
                 </form>
             </div>
+        </section>
+        <section id="contact-us">
+            <div class="contact-section-img">
+                <img src="./assets/img/contactus.png" alt="contact-us">
+            </div>
+            
         </section>
     </div>
     <script src="./js/main.js"></script>
