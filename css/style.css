@@ -26,22 +26,84 @@ header{
    background: #020202;
    color: #fff;
    margin: 0;
-   height: 50px;
+   height: 55px;
 }
 
 .left-header{
     display: flex;
     width: 30%;
     align-items: center;
-    margin: 0;
+    margin-left: 15px;
+    justify-content: space-evenly;
 }
 
 .logo{
     margin: 0;
-    width: 50%;
+    width: 20%;
 }
 #left{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 80%;
+}
+
+#left li{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+#left li a{
+    color: #f3eaea;
+    text-decoration: none;
+}
+
+.logo-description{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-description >h1{
+    width: 20%;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+span{
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.right-header{
+    width: 20%;
+    display: flex;
+}
+
+#right{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#right li{
+    list-style: none;
+    color: #fff;
+}
+
+#right li a{
+    color: #f3eaea;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#right #clubs{
+    color: #e7f706;
+}
+
+#right #trial{
+    color: #09d4f8;
 }
