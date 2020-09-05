@@ -1,3 +1,22 @@
+/* fonts */
+@font-face{
+    font-family: 'Agrandir';
+    src: url("/fonts/Agrandir\ -\ Free\ For\ Personal\ Use/Agrandir-GrandLight.otf");
+}
+
+@font-face{
+    font-family: 'Avenir';
+    src: url("/fonts/avenir_ff/AvenirLTStd-Book.otf");
+}
+
+:root{
+    --main-text-font: 'Montserrat', sans-serif;
+    --main-paragraph-bg-color: #ebebeb;
+    --main-text-color: #3a1506 !important;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -102,14 +121,13 @@ span{
     font-weight: 300;
 }
 
-#right #clubs{
-    color: #e7f706;
+#right #club1{
+    color: #acb61b;
 }
 
-#free{
-    color: #09c8f8;
+#right #club2{
+    color: #43d1eb;
 }
-
 /* end of header styles */
 
 /* home section styles */
@@ -118,7 +136,7 @@ span{
     justify-content: space-around;
     width: 100%;
     height: auto;
-    margin-top: 120px;
+    margin: 100px 0px 100px 0px;
     position: relative;
 }
 
@@ -128,7 +146,7 @@ span{
 
 .section-img >img{
     width: 100%;
-    height: 530px;
+    height: 480px;
 }
 
 .section-description{
@@ -142,30 +160,34 @@ span{
 }
 
 .header >h3{
-    width: 80%;
-    font-size: 2.5rem;
-    font-weight: 500;
+    width: 90%;
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
     line-height: 1.5;
+    font-family: Agrandir;
 }
 
-.section-text{
+#section-text{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: #ebebeb;
-    width: 80%;
+    background: var(--main-paragraph-bg-color);
+    width: 85%;
     height: 180px;
     padding: 20px;
     border: none;
     border-radius: 7px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
-.section-text >p{
+#section-text >p{
     letter-spacing: 1.2px;
     line-height: 1.5;
-    color: #63341a;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+    color: var(--main-text-color);
+    width: 100%;
 }
 
 .section-buttons{
@@ -249,8 +271,12 @@ span{
     font-size: 1rem;
     color: #706e6e;
     width: 80%;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     line-height: 1.3;
+    font-family: Avenir;
+}
+#hybrid-container >img{
+    height: 220px;
 }
 
 #hybrid{
@@ -295,7 +321,7 @@ span{
 }
 
 .club-text{
-    background: #dddddd;
+    background: var(--main-paragraph-bg-color);
     width: 80%;
     height: 200px;
     display: flex;
@@ -307,10 +333,11 @@ span{
 }
 
 .club-text >p{
-    color: #472419;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-text-color);
     letter-spacing: 1.5px;
     line-height: 1.8;
-    width: 90%;
+    width: 100%;
 }
 
 #club-button{
@@ -370,7 +397,7 @@ span{
     width: 50%;
     margin-bottom: 10px;
     height: 40px;
-    border: 1px solid #706e6e;
+    border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
     padding: 20px;
@@ -385,7 +412,7 @@ span{
     width: 100%;
     margin-bottom: 10px;
     height: 40px;
-    border: 1px solid #706e6e;
+    border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
     padding: 20px;
@@ -396,29 +423,34 @@ span{
     width: 100%;
     margin-bottom: 10px;
     height: 40px;
-    border: 1px solid #706e6e;
+    border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
     padding: 20px;
     outline: none;
 }
+::-webkit-input-placeholder { 
+    color: #beb8b9;
+    font-family: Avenir;
+  }
 
 .select{
     display: flex;
     width: 100%;
 }
 
-#grade-btn{
+label{
     width: 50%;
     height: 40px;
-    border: 1px solid #706e6e;
+    border: 1px solid #afabab;
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     font-size: 1rem;
-    color: #706e6e;
+    color: #beb8b9;
+    font-family: Avenir;
     background: none;
     outline: none;
 }
@@ -511,11 +543,12 @@ span{
    display: flex;
    flex-direction: column;
    padding: 10px;
-   background: #dddddd;
+   background: var(--main-paragraph-bg-color);
    justify-content: space-evenly;
-   color: #491b0f;
+   color: var(--main-text-color);
    border: none;
    border-radius: 10px;
+   font-family: var(--main-text-font);
 }
 
 .connect i{
@@ -549,9 +582,10 @@ span{
     width: 50%;
     margin-left: 50px;
     letter-spacing: 1.2px;
-    line-height: 1.5;
-    font-size: 1rem;
-    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.05rem;
+    font-weight: 500;
+    font-family: Avenir;
 }
 
 .footer-icons{
