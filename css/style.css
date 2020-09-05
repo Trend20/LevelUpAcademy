@@ -420,6 +420,7 @@ span{
     font-size: 1rem;
     color: #706e6e;
     background: none;
+    outline: none;
 }
 
 #grade{
@@ -443,6 +444,7 @@ span{
     color: #706e6e;
     margin-left: 10px;
     background: none;
+    outline: none;
 }
 
 #subject{
@@ -450,6 +452,8 @@ span{
     border: none;
     background: none;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 #details-button{
@@ -467,3 +471,102 @@ span{
 }
 /* end of credentials style */
 
+/* contact us styles */
+#contact-us{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact-section-img{
+    width: 50%;
+}
+
+.contact-section-img >img{
+    max-width: 80%;
+    transform: rotate(360deg)!important;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 50px;
+}
+
+.contact-details >h3{
+    margin: 30px;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    width: 100%;
+}
+
+.connect{
+   margin: 30px;
+   width: 80%;
+   height: 180px;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   background: #dddddd;
+   justify-content: space-evenly;
+   color: #491b0f;
+   border: none;
+   border-radius: 10px;
+}
+
+.connect i{
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.fa-phone-square-alt{
+    color: #1fb41f;
+}
+
+.fa-envelope-square{
+    color: #3585c7;
+}
+
+.fa-whatsapp-square{
+    color: #1fb41f;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #e77d26;
+    color: #fff;
+    height: 150px;
+}
+
+.footer-text{
+    width: 50%;
+    margin-left: 50px;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    width: 30%;
+}
+
+.footer-icons >li{
+    list-style: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* end of contact us styles */
