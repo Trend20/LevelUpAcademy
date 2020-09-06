@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.14.0-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./responsiveness.css"> -->
@@ -30,6 +31,9 @@
                         <li><a href="#clubs" id="club1">CLUBS</a></li>
                         <li><a href="#credentials" id="free">FREE TRIAL</a></li>
                     </ul>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
         </header>
         <!-- end of header -->
@@ -97,7 +101,10 @@
             <div class="content">
                 <div class="reasons">
                     <div class="actual-reason" id="hybrid-container">
-                        <img src="./assets/img/hybrid-learning.png" alt="hybrid" style="max-width: 50%;">
+                        <div class="wrapper">
+                            <img class="board-img" src="./assets/img/board.png" alt="board-img" style="max-width: 50%;">
+                            <img class="student-img" src="./assets/img/hybrid-learning.png" alt="hybrid" style="max-width: 50%;">
+                        </div>
                         <h3>hybrid learning</h3>
                         <p id="hybrid">enjoy best of both the words live <br> online classes
                             and traditional classroom teaching.
@@ -111,7 +118,10 @@
                         </p>
                     </div>
                     <div class="actual-reason" id="dynamic-container">
-                        <img src="./assets/img/dynamic.png" alt="dynamic" style="max-width: 30%;">
+                        <div class="wrapper">
+                            <img id="board-img" src="./assets/img/board.png" alt="board-img" style="max-width: 50%;">
+                            <img  id="dynamic-img" src="./assets/img/dynamic.png" alt="dynamic" style="max-width: 30%;">
+                        </div>
                         <h3>dynamic teachers</h3>
                         <p id="dynamic">learn from the most sincere, dynamic and entertaining experts.
                         </p>
@@ -218,13 +228,13 @@
                         <input type="text" id="last" placeholder="your first name" required>
                     </div>
                     <div id="number">
-                        <input type="text" placeholder="your phone number" required>
+                        <input type="text" placeholder="your phone number(10 digits)*" required>
                     </div>
                     <div id="id">
-                        <input type="email" placeholder="your email ID" required>
+                        <input type="email" placeholder="your email ID*" required>
                     </div>
                     <div class="select">
-                            <label for="grade">Select Grade
+                            <label for="grade">Select Grade*
                                 <select id = "grade">
                                     <option value = "A"></option>
                                     <option value = "B">B</option>
@@ -232,7 +242,7 @@
                                     <option value = "D">D</option>
                                   </select>
                             </label>
-                            <label for="subject">Select Subject
+                            <label for="subject">Select Subject*
                                 <select id = "subject">
                                     <option value = "Coding"></option>
                                     <option value = "Android Developemnt">Android Developemnt</option>
@@ -288,6 +298,7 @@
                     <p><i class="fas fa-phone-square-alt"></i>+91 98102 13960, +91 99999 23754</p>
                     <p><i class="fas fa-envelope-square"></i>levelupacad@gmail.com</p>
                     <p><i class="fab fa-whatsapp-square"></i>+91 98102 13960</p>
+                    <p><i class="fas fa-map-marker-alt"></i>C-9/26, Sector 7, Rohini, Delhi-110085</p>
                 </div>
             </div>
             <ul class="dot" data-wall-section-nav>
@@ -321,18 +332,5 @@
         </footer>
     </div>
     <script src="./js/main.js"></script>
-    <script src="dist/wall.js"></script>
-    <script>
-          var wall = new Wall('#wall',{
-        wrapperZIndex: 1,
-        sectionAnimateDuration: 1,
-        easeFunction: 'easeIn',
-        loopToBottom: false,
-        loopToTop: false,
-        sectionNavItemActiveClass: 'active',
-        animatingClass: 'animating',
-        currentClass: 'current'
-});
-    </script>
 </body>
 </html>

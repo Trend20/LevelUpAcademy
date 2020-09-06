@@ -101,23 +101,22 @@ header{
 
 .right-header{
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: center;
     align-items: center;
 }
 
 .right-header >ul{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin-right: 30px;
+    text-align: center;
+    width: 90%;
 }
 
 .right-header ul li{
     list-style: none;
     color: #fff;
-    display: flex;
+    width: 100%;
 }
 
 .right-header ul li a{
@@ -133,8 +132,23 @@ header{
     background: #080cf5;
     text-align: center;
     height: 30px;
-    width: 100%;
     padding: 5px;
+}
+
+.hamburger{
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    background: #222;
+}
+
+.hamburger >i{
+    position: absolute;
+    right: .2%;
+    top: 1%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2.5rem;
 }
 
 /* end of header styles */
@@ -150,11 +164,11 @@ header{
 }
 
 .section-img{
-    width: 50%;
+    width: 40%;
 }
 
 .section-img >img{
-    width: 100%;
+    width: 90%;
     height: 480px;
 }
 
@@ -325,6 +339,33 @@ header{
     width: 30%;
     position: relative;
     text-align: center;
+}
+
+.wrapper{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.board-img{
+    width: 40%;
+}
+
+.student-img{
+    position:absolute;
+    top: 30%;
+    left:25%;
+    width:85%;
+}
+#board-img{
+    width: 40%;
+    top: 10%;
+}
+
+#dynamic-img{
+    position:absolute;
+    top: 15%;
+    left:30%;
+    width:85%;
 }
 
 .actual-reason >h3{
@@ -641,15 +682,25 @@ label{
 .fa-whatsapp-square{
     color: #68d868;
 }
+.fa-map-marker-alt{
+    background: linear-gradient(to bottom, #8cb2de, #0c2441);
+    width: 8%;
+    font-size: .2rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px;
+}
 /* end of contact-us style */
 #footer{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background: #f19a52;
+    background: #db0e0e;
     color: #fff;
-    height: 150px;
+    height: 120px;
 }
 
 .footer-text >p{
@@ -741,12 +792,14 @@ label{
      
      .left-header{
          display: flex;
-         justify-content: flex-start;
          align-items: center;
+         justify-content: flex-start;
+         margin-left: 0px;
          text-align: center;
-         width: 20%;
-         padding: 0;
-         margin-left: 50px;
+         width: 50%;
+         position: fixed;
+         z-index: 1;
+         background: #222;
      }
      
      .logo{
@@ -754,7 +807,7 @@ label{
          margin: 0;
      }
      .logo-description{
-         width: 30%;
+         width: 50%;
          display: flex;
          align-items: center;
          flex-direction: column;
@@ -788,28 +841,41 @@ label{
      
      .right-header{
          display: flex;
-         width: 50%;
+         width: 100%;
+         flex-direction: column;
          justify-content: center;
          align-items: center;
+         position: absolute;
+         margin-top: 50px;
+         height: auto;
+         /* visibility: hidden; */
      }
      
      .right-header >ul{
          display: flex;
-         justify-content: space-between;
+         flex-direction: column;
+         justify-content: center;
          align-items: center;
          width: 100%;
-         margin-right: 30px;
+         background: #222;
+         padding: 10px;
+         height: auto;
+         margin-top: 250px;
      }
      
      .right-header ul li{
          list-style: none;
          color: #fff;
          display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 10px;
      }
      
      .right-header ul li a{
          color: #fff;
          text-decoration: none;
+         text-align: center;
      }
      
      #club1{
@@ -823,6 +889,22 @@ label{
          width: 100%;
          padding: 5px;
      }
+     .hamburger{
+        text-align: center;
+        margin-right: 10px;
+        background: #222;
+        width: 50%;
+    }
+    
+    .hamburger >i{
+        position: absolute;
+        right: .2%;
+        top: 5%;
+        text-align: center;
+        cursor: pointer;
+        font-size: 2.5rem;
+        visibility: hidden;
+    }
      /* end of responsive header */
 
 
@@ -835,7 +917,7 @@ label{
         flex-direction: column;
         width: 100%;
         height: auto;
-        margin: 100px 0px 100px 0px;
+        margin: 280px 0px 100px 0px;
         position: relative;
     }
     
@@ -1381,7 +1463,7 @@ label{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #f19a52;
+    background: #db0e0e;
     background-size: cover;
     color: #fff;
     margin: 0;
@@ -2082,7 +2164,7 @@ label{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #f19a52;
+    background: #db0e0e;
     background-size: cover;
     color: #fff;
     margin: 0;
@@ -2732,7 +2814,7 @@ label{
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        background: #f19a52;
+        background: #db0e0e;
         color: #fff;
         height: 150px;
     }
