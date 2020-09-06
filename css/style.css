@@ -44,95 +44,99 @@ body{
 
 header{
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
+   height: 55px;
+   background: #222;
    width: 100%;
    position: relative;
-   background: #020202;
-   color: #fff;
-   margin: 0;
-   height: 55px;
 }
 
 .left-header{
     display: flex;
-    width: 30%;
+    justify-content: flex-start;
     align-items: center;
-    margin-left: 15px;
-    justify-content: space-evenly;
+    text-align: center;
+    width: 20%;
+    padding: 0;
+    margin-left: 50px;
 }
 
 .logo{
-    margin: 0;
     width: 20%;
+    margin: 0;
 }
-#left{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-
-#left li{
-    list-style: none;
-    display: flex;
-    width: 100%;
-}
-
-#left li a{
-    color: #f3eaea;
-    text-decoration: none;
-}
-
 .logo-description{
-    width: 70%;
+    width: 30%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 10px;
 }
 
 .logo-description >h1{
-    width: 20%;
-    margin: auto;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1rem;
+    opacity: 1;
     text-transform: uppercase;
+    padding: 0;
+    margin-top: 5px;
+    width: 100%;
+    font-weight: bold;
 }
 
-span{
-    text-align: center;
-    font-size: 1rem;
-    margin-left: 20px;
+.logo-description >h2{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #e9de46; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    font-size: .6rem;
+    text-transform: uppercase;
+}
+.logo-description >h2 span{
+    background: #222; 
+    padding:0 3px; 
 }
 
 .right-header{
-    width: 20%;
     display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
-#right{
+.right-header >ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    margin-right: 30px;
 }
 
-#right li{
+.right-header ul li{
     list-style: none;
     color: #fff;
+    display: flex;
 }
 
-#right li a{
-    color: #f3eaea;
-    text-transform: uppercase;
+.right-header ul li a{
+    color: #fff;
     text-decoration: none;
-    font-weight: 300;
 }
 
-#right #club1{
-    color: #acb61b;
+#club1{
+    color: #e9de46;
 }
 
-#right #club2{
-    color: #43d1eb;
+#free{
+    background: #080cf5;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
 }
+
 /* end of header styles */
 
 /* home section styles */
@@ -214,6 +218,9 @@ span{
   font-size: 1rem;
   font-weight: bold;
 }
+#red:hover{
+    background: #be7d32;
+}
 #blue{
     width: 40%;
     height: 40px;
@@ -227,6 +234,9 @@ span{
     font-size: 1rem;
     font-weight: bold;
   }
+  #blue:hover{
+    background: #acb937;
+}
 
   .dot{
       width: 5%;
@@ -412,6 +422,10 @@ span{
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;
+}
+
+#club-button:hover{
+    background: #e26a45;
 }
 /* end of clubs style */
 
@@ -717,91 +731,97 @@ label{
     /* responsive header */
     header{
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        background: #222;
         width: 100%;
         position: relative;
-        background: #020202;
-        color: #fff;
-        margin: 0;
-        height: 55px;
      }
      
      .left-header{
          display: flex;
-         width: 20%;
+         justify-content: flex-start;
          align-items: center;
+         text-align: center;
+         width: 20%;
+         padding: 0;
+         margin-left: 50px;
      }
      
      .logo{
+         width: 20%;
          margin: 0;
-         width: 70%;
      }
-     #left{
-         display: none;
-         width: 80%;
-         padding: 5px;
-     }
-     
-     #left li{
-         list-style: none;
-         display: flex;
-         width: 100%;
-     }
-     
-     #left li a{
-         color: #f3eaea;
-         text-decoration: none;
-     }
-     
      .logo-description{
-         width: 40%;
+         width: 30%;
          display: flex;
          align-items: center;
+         flex-direction: column;
+         color: #fff;
+         margin-top: 10px;
      }
      
      .logo-description >h1{
-         width: 70%;
-         margin: auto;
          font-size: 1rem;
-         font-weight: bold;
+         opacity: 1;
          text-transform: uppercase;
+         padding: 0;
+         margin-top: 5px;
+         width: 100%;
+         font-weight: bold;
      }
      
-     span{
-         text-align: center;
-         font-size: .55rem;
+     .logo-description >h2{
+         width: 100%; 
+         text-align: center; 
+         border-bottom: 1px solid #e9de46; 
+         line-height: 0.1em;
+         margin: 10px 0 20px; 
+         font-size: .6rem;
+         text-transform: uppercase;
+     }
+     .logo-description >h2 span{
+         background: #222; 
+         padding:0 3px; 
      }
      
      .right-header{
-         width: 10%;
-         display: none;
-     }
-     
-     #right{
          display: flex;
-         justify-content: space-around;
-         width: 100%;
+         width: 50%;
+         justify-content: center;
+         align-items: center;
      }
      
-     #right li{
+     .right-header >ul{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         margin-right: 30px;
+     }
+     
+     .right-header ul li{
          list-style: none;
          color: #fff;
+         display: flex;
      }
      
-     #right li a{
-         color: #f3eaea;
-         text-transform: uppercase;
+     .right-header ul li a{
+         color: #fff;
          text-decoration: none;
-         font-weight: 300;
      }
      
-     #right #club1{
-         color: #acb61b;
+     #club1{
+         color: #e9de46;
      }
      
-     #right #club2{
-         color: #43d1eb;
+     #free{
+         background: #080cf5;
+         text-align: center;
+         height: 30px;
+         width: 100%;
+         padding: 5px;
      }
      /* end of responsive header */
 
@@ -1420,91 +1440,97 @@ label{
     /* responsive header */
     header{
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+        height: 55px;
+        background: #222;
         width: 100%;
         position: relative;
-        background: #020202;
-        color: #fff;
-        margin: 0;
-        height: 55px;
      }
      
      .left-header{
          display: flex;
-         width: 20%;
+         justify-content: flex-start;
          align-items: center;
+         text-align: center;
+         width: 20%;
+         padding: 0;
+         margin-left: 50px;
      }
      
      .logo{
+         width: 20%;
          margin: 0;
-         width: 50%;
      }
-     #left{
-         display: none;
-         width: 80%;
-         padding: 5px;
-     }
-     
-     #left li{
-         list-style: none;
-         display: flex;
-         width: 100%;
-     }
-     
-     #left li a{
-         color: #f3eaea;
-         text-decoration: none;
-     }
-     
      .logo-description{
          width: 30%;
          display: flex;
          align-items: center;
+         flex-direction: column;
+         color: #fff;
+         margin-top: 10px;
      }
      
      .logo-description >h1{
-         width: 70%;
-         margin: auto;
          font-size: 1rem;
-         font-weight: bold;
+         opacity: 1;
          text-transform: uppercase;
+         padding: 0;
+         margin-top: 5px;
+         width: 100%;
+         font-weight: bold;
      }
      
-     span{
-         text-align: center;
-         font-size: .55rem;
+     .logo-description >h2{
+         width: 100%; 
+         text-align: center; 
+         border-bottom: 1px solid #e9de46; 
+         line-height: 0.1em;
+         margin: 10px 0 20px; 
+         font-size: .6rem;
+         text-transform: uppercase;
+     }
+     .logo-description >h2 span{
+         background: #222; 
+         padding:0 3px; 
      }
      
      .right-header{
-         width: 10%;
-         display: none;
-     }
-     
-     #right{
          display: flex;
-         justify-content: space-around;
-         width: 100%;
+         width: 50%;
+         justify-content: center;
+         align-items: center;
      }
      
-     #right li{
+     .right-header >ul{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         margin-right: 30px;
+     }
+     
+     .right-header ul li{
          list-style: none;
          color: #fff;
+         display: flex;
      }
      
-     #right li a{
-         color: #f3eaea;
-         text-transform: uppercase;
+     .right-header ul li a{
+         color: #fff;
          text-decoration: none;
-         font-weight: 300;
      }
      
-     #right #club1{
-         color: #acb61b;
+     #club1{
+         color: #e9de46;
      }
      
-     #right #club2{
-         color: #43d1eb;
+     #free{
+         background: #080cf5;
+         text-align: center;
+         height: 30px;
+         width: 100%;
+         padding: 5px;
      }
      /* end of responsive header */
 
@@ -2112,100 +2138,99 @@ label{
     /* header styles */
     
     header{
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       width: 100%;
-       position: relative;
-       background: #020202;
-       color: #fff;
-       margin: 0;
-       height: 55px;
-    }
-    
-    .left-header{
         display: flex;
-        width: 30%;
+        justify-content: space-between;
         align-items: center;
-        margin-left: 15px;
-        justify-content: space-evenly;
-    }
-    
-    .logo{
-        margin: 0;
-        width: 20%;
-    }
-    #left{
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    #left li{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
+        height: 55px;
+        background: #222;
         width: 100%;
-        padding: 10px;
-    }
-    
-    #left li a{
-        display: flex;
-        color: #f3eaea;
-        text-decoration: none;
-        padding: 10px;
-    }
-    
-    .logo-description{
-        width: 70%;
-        display: flex;
-        align-items: center;
-    }
-    
-    .logo-description >h1{
-        width: 40%;
-        margin: auto;
-        font-size: 1.2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    
-    span{
-        text-align: center;
-        font-size: .8rem;
-        margin-left: 16px;
-    }
-    
-    .right-header{
-        width: 40%;
-        display: flex;
-    }
-    
-    #right{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    
-    #right li{
-        list-style: none;
-        color: #fff;
-        padding: 10px;
-    }
-    
-    #right li a{
-        color: #f3eaea;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 300;
-    }
-    
-    #right #club1{
-        color: #acb61b;
-    }
-    
-    #right #club2{
-        color: #43d1eb;
-    }
+        position: relative;
+     }
+     
+     .left-header{
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         text-align: center;
+         width: 20%;
+         padding: 0;
+         margin-left: 50px;
+     }
+     
+     .logo{
+         width: 20%;
+         margin: 0;
+     }
+     .logo-description{
+         width: 30%;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         color: #fff;
+         margin-top: 10px;
+     }
+     
+     .logo-description >h1{
+         font-size: 1rem;
+         opacity: 1;
+         text-transform: uppercase;
+         padding: 0;
+         margin-top: 5px;
+         width: 100%;
+         font-weight: bold;
+     }
+     
+     .logo-description >h2{
+         width: 100%; 
+         text-align: center; 
+         border-bottom: 1px solid #e9de46; 
+         line-height: 0.1em;
+         margin: 10px 0 20px; 
+         font-size: .6rem;
+         text-transform: uppercase;
+     }
+     .logo-description >h2 span{
+         background: #222; 
+         padding:0 3px; 
+     }
+     
+     .right-header{
+         display: flex;
+         width: 50%;
+         justify-content: center;
+         align-items: center;
+     }
+     
+     .right-header >ul{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         margin-right: 30px;
+     }
+     
+     .right-header ul li{
+         list-style: none;
+         color: #fff;
+         display: flex;
+     }
+     
+     .right-header ul li a{
+         color: #fff;
+         text-decoration: none;
+     }
+     
+     #club1{
+         color: #e9de46;
+     }
+     
+     #free{
+         background: #080cf5;
+         text-align: center;
+         height: 30px;
+         width: 100%;
+         padding: 5px;
+     }
     /* end of header styles */
     
     /* home section styles */
