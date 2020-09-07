@@ -632,18 +632,19 @@ label{
 #contact-us{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
 .contact-section-img{
-    width: 30%;
+    width: 40%;
 }
 
 .contact-section-img >img{
-    margin-left: 100px;
-    max-width: 100%;
+    margin-left: 150px;
+    width: 100%;
+    height: 330px;
     transform: scaleX(-1);
     margin-top: 100px;
 }
@@ -665,7 +666,7 @@ label{
 
 .connect{
    margin: 30px;
-   width: 80%;
+   width: 70%;
    height: 180px;
    display: flex;
    flex-direction: column;
@@ -795,6 +796,7 @@ label{
     
     .section-img{
         width: 100%;
+        margin: 0;
     }
     
     .section-img >img{
@@ -1290,7 +1292,6 @@ label{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 10px;
 }
 
 .contact-details >h3{
@@ -1303,12 +1304,11 @@ label{
 }
 
 .connect{
-   margin: 20px;
-   width: 95%;
+   width: 100%;
    height: 180px;
    display: flex;
    flex-direction: column;
-   padding: 10px;
+   padding: 5px;
    background: var(--main-paragraph-bg-color);
    justify-content: space-evenly;
    color: var(--main-text-color);
@@ -1324,18 +1324,21 @@ label{
 
 .fa-phone-square-alt{
     color: #70d170;
+    width: 10%;
 }
 
 .fa-envelope-square{
    color: #43d1eb;
+   width: 10%;
 }
 
 .fa-whatsapp-square{
     color: #68d868;
+    width: 10%;
 }
 
 .fa-map-marker-alt{
-    color: #fff;
+    font-size: 1rem;
     width: 10%;
 }
 
