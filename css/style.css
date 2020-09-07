@@ -638,13 +638,14 @@ label{
 }
 
 .contact-section-img{
-    width: 50%;
+    width: 30%;
 }
 
 .contact-section-img >img{
-    margin-left: 200px;
-    max-width: 80%;
+    margin-left: 100px;
+    max-width: 100%;
     transform: scaleX(-1);
+    margin-top: 100px;
 }
 
 .contact-details{
@@ -698,12 +699,11 @@ label{
     background: linear-gradient(to bottom, #8cb2de, #0c2441);
     width: 8%;
     height: 32px;
-    font-size: .2rem;
+    font-size: .75em;
     text-align: center;
     border: none;
     border-radius: 5px;
     color: #fff;
-    /* padding: 3px; */
     padding-top: 1px;
 }
 /* end of contact-us style */
