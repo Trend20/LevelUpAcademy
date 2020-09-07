@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <!-- <header>
             <div class="left-header">
                 <div class="logo">
                     <a href="index.html"><img src="./assets/img/logo.png" alt="logo" style="max-width: 100%;"></a>
@@ -35,6 +35,26 @@
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
+        </header> -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./assets/img/logo.png" alt="logo" style="max-width: 10%;"></a>
+                <div class="logo-description">
+                    <h1>Level Up</h1>
+                    <h2><span>Academy</span></h2>
+                </div>
+            </div>
+            <nav class="active">
+                <ul>
+                        <li><a href="#contact-us">FAQs</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#about">CURRICULUM</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#clubs" id="club1">CLUBS</a></li>
+                        <li><a href="#credentials" id="free">FREE TRIAL</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </header>
         <!-- end of header -->
 
@@ -73,27 +93,6 @@
         </section>
         <!-- end of home -->
         <!-- page header -->
-        <header>
-            <div class="left-header">
-                <div class="logo">
-                    <a href="index.html"><img src="./assets/img/logo.png" alt="logo" style="max-width: 100%;"></a>
-                </div>
-                <div class="logo-description">
-                        <h1>Level Up</h1>
-                        <h2><span>Academy</span></h2>
-                </div>
-            </div>
-            <div class="right-header">
-                    <ul>
-                        <li><a href="#contact-us">FAQs</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#about">CURRICULUM</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#clubs" id="club1">CLUBS</a></li>
-                        <li><a href="#credentials" id="free">FREE TRIAL</a></li>
-                    </ul>
-            </div>
-        </header>
         <!-- end -->
 <!-- page content -->
         <section id="about">
@@ -142,27 +141,7 @@
         </section>
         <!-- end of about -->
         <!-- page header -->
-        <header>
-            <div class="left-header">
-                <div class="logo">
-                    <a href="index.html"><img src="./assets/img/logo.png" alt="logo" style="max-width: 100%;"></a>
-                </div>
-                <div class="logo-description">
-                        <h1>Level Up</h1>
-                        <h2><span>Academy</span></h2>
-                </div>
-            </div>
-            <div class="right-header">
-                    <ul>
-                        <li><a href="#contact-us">FAQs</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#about">CURRICULUM</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#clubs" id="club1">CLUBS</a></li>
-                        <li><a href="#credentials" id="free">FREE TRIAL</a></li>
-                    </ul>
-            </div>
-        </header>
+        
         <!-- contents -->
 
         <section id="clubs">
@@ -194,27 +173,6 @@
               </ul>
         </section>
         <!-- header -->
-        <header>
-            <div class="left-header">
-                <div class="logo">
-                    <a href="index.html"><img src="./assets/img/logo.png" alt="logo" style="max-width: 100%;"></a>
-                </div>
-                <div class="logo-description">
-                        <h1>Level Up</h1>
-                        <h2><span>Academy</span></h2>
-                </div>
-            </div>
-            <div class="right-header">
-                    <ul>
-                        <li><a href="#contact-us">FAQs</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#about">CURRICULUM</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#clubs" id="club1">CLUBS</a></li>
-                        <li><a href="#credentials" id="free">FREE TRIAL</a></li>
-                    </ul>
-            </div>
-        </header>
 
         <section id="credentials">
             <div class="cred-image">
@@ -267,27 +225,6 @@
               </ul>
         </section>
         <!-- header -->
-        <header>
-            <div class="left-header">
-                <div class="logo">
-                    <a href="index.html"><img src="./assets/img/logo.png" alt="logo" style="max-width: 100%;"></a>
-                </div>
-                <div class="logo-description">
-                        <h1>Level Up</h1>
-                        <h2><span>Academy</span></h2>
-                </div>
-            </div>
-            <div class="right-header">
-                    <ul>
-                        <li><a href="#contact-us">FAQs</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#about">CURRICULUM</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#clubs" id="club1">CLUBS</a></li>
-                        <li><a href="#credentials" id="free">FREE TRIAL</a></li>
-                    </ul>
-            </div>
-        </header>
         <section id="contact-us">
             <div class="contact-section-img">
                 <img src="./assets/img/contactus.png" alt="contact-us" style="max-width: 30%;">
@@ -331,6 +268,14 @@
             <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button> 
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            });
+        })
+    </script>
 </body>
 </html>
