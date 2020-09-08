@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fontawesome-free-5.14.0-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./assets/fontawesome-free-5.14.0-web/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./responsiveness.css"> -->
     <title>Level Up Academy</title>
@@ -32,7 +32,7 @@
         <!-- end of header -->
         <section id="home">
             <div class="section-img">
-                <img src="./assets/img/learning.png" alt="learning">
+                <img src="./assets/img/learning.png" alt="learning" style="max-width: 30%;">
             </div>
             <div class="section-description">
                <div class="header">
@@ -64,26 +64,8 @@
               </ul>
         </section>
         <!-- end of home -->
-         <!-- header -->
-         <header>
-            <a href="#" class="logo"><img src="./assets/img/logo2.png" alt="logo" style="width: 30%;"></a>
-            <div class="menu-toggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="#contact-us">FAQs</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#about">CURRICULUM</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#clubs" id="club">CLUBS</a></li>
-                    <li><a href="#credentials" class="active">FREE TRIAL</a></li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
-        </header>
-        <!-- end of header -->
         <section id="about">
             <h3>Why LEVEL UP?</h3>
-            <div class="content">
                 <div class="reasons">
                     <div class="actual-reason" id="hybrid-container">
                         <div class="wrapper">
@@ -96,7 +78,9 @@
                         </p>
                     </div>
                     <div class="actual-reason" id="overall-container">
-                        <img src="./assets/img/overall.png" alt="overall" style="max-width: 50%;">
+                       <!-- <div class="wrapper"> -->
+                           <img  id="overall-img"src="./assets/img/overall.png" alt="overall" style="max-width: 50%;">
+                       <!-- </div> -->
                         <h3>overall development</h3>
                         <p id="overall"> not just the marks, we focus on the overall development of 
                             the student.
@@ -104,7 +88,7 @@
                     </div>
                     <div class="actual-reason" id="dynamic-container">
                         <div class="wrapper">
-                            <img id="board-img" src="./assets/img/board.png" alt="board-img" style="max-width: 50%;">
+                            <img class="board-img" src="./assets/img/board.png" alt="board-img" style="max-width: 50%;">
                             <img  id="dynamic-img" src="./assets/img/dynamic.png" alt="dynamic" style="max-width: 30%;">
                         </div>
                         <h3>dynamic teachers</h3>
@@ -112,37 +96,8 @@
                         </p>
                     </div>
                 </div>
-                <ul class="dot" data-wall-section-nav id="about-dot">
-                    <div class="radios">
-                        <li><input type="radio" id=""></li>
-                        <li><input type="radio" id=""></li>
-                        <li><input type="radio" id=""></li>
-                        <li><input type="radio" id=""></li>
-                        <li><input type="radio" id=""></li>
-    
-                    </div>
-                    <i class="fas fa-arrow-down"></i>
-                  </ul>
-            </div>
         </section>
         <!-- end of about -->
-         <!-- header -->
-         <header>
-            <a href="#" class="logo"><img src="./assets/img/logo2.png" alt="logo" style="width: 30%;"></a>
-            <div class="menu-toggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="#contact-us">FAQs</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#about">CURRICULUM</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#clubs" id="club">CLUBS</a></li>
-                    <li><a href="#credentials" class="active">FREE TRIAL</a></li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
-        </header>
-        <!-- end of header -->
 
         <section id="clubs">
             <div class="images">
@@ -160,36 +115,8 @@
                 </div>
                 <button id="club-button">coming soon</button>
             </div>
-            <ul class="dot" data-wall-section-nav>
-                <div class="radios">
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-
-                </div>
-                <i class="fas fa-arrow-down"></i>
-              </ul>
-        </section>
-        
-         <!-- header -->
-         <header>
-            <a href="#" class="logo"><img src="./assets/img/logo2.png" alt="logo" style="width: 30%;"></a>
-            <div class="menu-toggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="#contact-us">FAQs</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#about">CURRICULUM</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#clubs" id="club">CLUBS</a></li>
-                    <li><a href="#credentials" class="active">FREE TRIAL</a></li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
-        </header>
-        <!-- end of header -->
+            
+            </section>
 
         <section id="credentials">
             <div class="cred-image">
@@ -229,36 +156,9 @@
                     <button id="details-button">Book a FREE TRIAL</button>
                 </form>
             </div>
-            <ul class="dot" data-wall-section-nav>
-                <div class="radios">
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-
-                </div>
-                <i class="fas fa-arrow-down"></i>
-              </ul>
+            
         </section>
        
-         <!-- header -->
-         <header>
-            <a href="#" class="logo"><img src="./assets/img/logo2.png" alt="logo" style="width: 30%;"></a>
-            <div class="menu-toggle"></div>
-            <nav>
-                <ul>
-                    <li><a href="#contact-us">FAQs</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#about">CURRICULUM</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#clubs" id="club">CLUBS</a></li>
-                    <li><a href="#credentials" class="active">FREE TRIAL</a></li>
-                </ul>
-            </nav>
-            <div class="clearfix"></div>
-        </header>
-        <!-- end of header -->
         <section id="contact-us">
             <div class="contact-section-img">
                 <img src="./assets/img/contactus.png" alt="contact-us" style="max-width: 30%;">
@@ -266,23 +166,13 @@
             <div class="contact-details">
                 <h3>Contact Us</h3>
                 <div class="connect">
-                    <p><i class="fas fa-phone-square-alt"></i>+91 98102 13960, +91 99999 23754</p>
-                    <p><i class="fas fa-envelope-square"></i>levelupacad@gmail.com</p>
-                    <p><i class="fab fa-whatsapp-square"></i>+91 98102 13960</p>
-                    <p><i class="fas fa-map-marker-alt"></i></i>C-9/26, Sector 7, Rohini, Delhi-110085</p>
+                    <p><i class="fas fa-phone-square-alt"></i><span>+91 98102 13960, +91 99999 23754</span></p>
+                    <p> <img src="./assets/img/mail.png" alt="" style="max-width: 8%;"> <span>levelupacad@gmail.com</span></p>
+                    <p><i class="fab fa-whatsapp-square"></i><span>+91 98102 13960</span></p>
+                    <p><img src="./assets/img/geo.png" alt="" style="max-width: 8%"><span> C-9/26, Sector 7, Rohini, Delhi-110085</span></p>
                 </div>
             </div>
-            <ul class="dot" data-wall-section-nav>
-                <div class="radios">
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-
-                </div>
-                <i class="fas fa-arrow-down"></i>
-              </ul>
+            
         </section>
 
         <footer id="footer">
