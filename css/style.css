@@ -52,11 +52,20 @@ header{
 }
 
 .logo{
-    height: 50px;
-    padding: 0 20px;
+    height: 60px;
+    padding: 0 20px 0px;
+    margin-left: 20px;
     float: left;
-    width: 40%;
-    margin-top: 20px;
+    width: 50%;
+}
+
+.logo-img{
+    max-width: 68%;
+    height: auto;
+}
+
+.logo-text{
+    margin-bottom: 12px;
 }
 
 nav{
@@ -82,14 +91,16 @@ nav ul li{
 nav ul li a{
     display: block;
     margin: 10px 0;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-decoration: none;
+    text-align: center;
     color: #fff;
+    font-family: Agrandir;
 }
-nav ul li a.active,
-nav ul li a:hover{
-    background: #393cda;
+nav ul li a.active{
+    background: #3133b8;
     transition: 0.5s;
+    padding: 5px 10px 3px;
 }
 
 #club{
@@ -99,23 +110,42 @@ nav ul li a:hover{
 @media (max-width: 1200px){
     header{
         margin: 0px;
+        height: auto;
     }
 
     .logo{
         margin-top: 10px;
         width: 50%;
     }
+
+    .logo-img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    .logo-text{
+        max-width: 50%;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px){
+
+    header{
+        margin: 0;
+        height: auto;
+    }
     .logo{
-        margin-top: 20px;
+        margin-top: 50px;
         width: 80%;
+        position: absolute;
+        top: -50%;
+        left: 3%;
     }
 
     .logo>img{
         width: 100%;
-        height: 30px;
+        height: 50px;
     }
     .menu-toggle{
         display: block;
@@ -164,6 +194,7 @@ nav ul li a:hover{
     height: auto;
     margin: 100px 50px;
     position: relative;
+    justify-content: space-between;
 }
 
 .section-img{
@@ -172,11 +203,8 @@ nav ul li a:hover{
 }
 
 .section-img >img{
-    position: absolute;
-    max-width: 100%;
-    top: 0;
-    left: 10%;
     height: auto;
+    width: 100%;
 }
 
 .section-description{
@@ -383,7 +411,7 @@ nav ul li a:hover{
     font-size: 1rem;
     letter-spacing: 1.2px;
     line-height: 1.8;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     opacity: 1;
 }
@@ -684,6 +712,11 @@ label{
     width: 100%;
 }
 
+p span{
+    margin-top: 5px;
+    position: absolute;
+}
+
 .connect i{
     margin-right: 15px;
     font-size: 2rem;
@@ -697,7 +730,7 @@ label{
 }
 
 .fa-phone-square-alt{
-    color: #70d170;
+    color: #19eb3c;
 }
 
 .fa-envelope-square{
@@ -705,18 +738,7 @@ label{
 }
 
 .fa-whatsapp-square{
-    color: #68d868;
-}
-.fa-map-marker-alt{
-    background: linear-gradient(to bottom, #8cb2de, #0c2441);
-    width: 8%;
-    height: 32px;
-    font-size: .75em;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding-top: 1px;
+    color: #19eb3c;
 }
 /* end of contact-us style */
 #footer{
@@ -733,7 +755,7 @@ label{
     width: 60%;
     margin-left: 50px;
     line-height: 1.5;
-    font-family: var(--main-text-font);
+    font-family: Agrandir;
 }
 
 .footer-icons{
@@ -797,6 +819,7 @@ label{
      #home{
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
         width: 100%;
         height: auto;
@@ -806,30 +829,29 @@ label{
     
     .section-img{
         width: 100%;
-        margin: 0;
+        height: auto;
+        margin: auto;
     }
     
     .section-img >img{
-        max-width: 100%;
-        height: 480px;
+        max-width: 50%;
+        height: auto;
+        margin: 30px;
     }
+    
     
     .section-description{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         margin: auto;
+        margin-top: 50px;
     }
     
     .header{
         width: 100%;
-        margin: 10px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
         text-align: center;
     }
     
