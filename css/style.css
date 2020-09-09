@@ -200,11 +200,14 @@ nav ul li a.active{
 .section-img{
     width: 50%;
     margin-left: 30px;
+    position: relative;
 }
 
 .section-img >img{
     height: auto;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .section-description{
@@ -378,7 +381,7 @@ nav ul li a.active{
 
 .wrapper{
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     width: 100%;
     height: auto;
 }
@@ -1305,8 +1308,9 @@ label{
 .contact-section-img{
     width: 100%;
     display: flex;
-    margin: auto;
     text-align: center;
+    height: auto;
+    position: relative;
 }
 
 .contact-section-img >img{
@@ -1316,6 +1320,12 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* height: auto; */
+    position: absolute;
+    bottom: 50%;
+    top: 20%;
+    left: 40%;
+    margin-top: 5px;
 }
 
 .contact-details{
@@ -1324,6 +1334,7 @@ label{
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 200px;
 }
 
 .contact-details >h3{
@@ -1337,7 +1348,7 @@ label{
 
 .connect{
    width: 100%;
-   height: 180px;
+   /* height: 180px; */
    display: flex;
    flex-direction: column;
    padding: 5px;
@@ -1354,22 +1365,20 @@ label{
     font-size: 2rem;
 }
 
+.connect p img{
+    cursor: pointer;
+    margin-right: 15px;
+    max-width: 5%;
+}
+
 .fa-phone-square-alt{
     color: #70d170;
     
 }
 
-.fa-envelope-square{
-   color: #43d1eb;
-   
-}
 
 .fa-whatsapp-square{
     color: #68d868;
-}
-
-.fa-map-marker-alt{
-    font-size: 1rem;
 }
 
 /* end of responsive contact-us */
@@ -1452,11 +1461,14 @@ label{
     
     .section-img{
         width: 100%;
+        position: relative;
     }
     
     .section-img >img{
-        width: 100%;
-        height: 480px;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 2;
     }
     
     .section-description{
@@ -1465,7 +1477,8 @@ label{
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin: auto;
+        margin-right: 0;
+        padding: 0;
     }
     
     .header{
@@ -1494,12 +1507,12 @@ label{
         flex-direction: column;
         justify-content: space-around;
         background: var(--main-paragraph-bg-color);
-        width: 95%;
+        width: 100%;
         height: 200px;
         padding: 20px;
         border: none;
         border-radius: 7px;
-        margin-top: 15px;
+        margin-top: 10px;
         text-align: center;
     }
     
