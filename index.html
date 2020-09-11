@@ -131,32 +131,44 @@
                 <h3>Lets LEVEL UP?</h3>
                 <form action="" id="form">
                     <div class="names">
-                        <input type="text" id="first" placeholder="your first name" required>
-                        <input type="text" id="last" placeholder="your first name" required>
+                        <input type="text" id="first" class="form-field" placeholder="your first name" required>
+                        <input type="text" id="last" class="form-field" placeholder="your first name" required>
+                        <i class="fas fa-check"></i>
                     </div>
                     <div id="number">
-                        <input type="text" placeholder="your phone number(10 digits)*" required>
+                        <input type="text" class="form-field" placeholder="your phone number(10 digits)*" required>
+                        <i class="fas fa-check"></i>
                     </div>
                     <div id="id">
-                        <input type="email" placeholder="your email ID*" required>
+                        <input type="email" class="form-field" placeholder="your email ID*" required>
+                        <i class="fas fa-check"></i>
                     </div>
                     <div class="select">
-                            <label for="grade">Select Grade*
-                                <select id = "grade">
-                                    <option value = "A"></option>
-                                    <option value = "B">B</option>
-                                    <option value = "C">C</option>
-                                    <option value = "D">D</option>
+                                <select id = "grade" class="dropdown">
+                                   <div class="option">
+                                    <option value="" class="grade-options">Select Grade*</option>
+                                    <hr>
+                                    <option value = "Class 9" class="grade-options">Class 9</option>
+                                    <hr>
+                                    <option value = "Class 10" class="grade-options">Class 10</option>
+                                    <hr>
+                                    <option value = "Class 11" class="grade-options">Class 11</option>
+                                    <hr>
+                                    <option value = "Class 12" class="grade-options">Class 9</option>
+                                   </div>
                                   </select>
-                            </label>
-                            <label for="subject">Select Subject*
-                                <select id = "subject">
-                                    <option value = "Coding"></option>
-                                    <option value = "Android Developemnt">Android Developemnt</option>
-                                    <option value = "Web Design">Web Design</option>
-                                    <option value = "Project Management">Project Management</option>
+                                <select id = "subject" class="dropdown">
+                                    <option value="">Select Subject*</option>
+                                    <hr>
+                                    <option value = "English">English</option>
+                                    <hr>
+                                    <option value = "Maths">Maths</option>
+                                    <hr>
+                                    <option value = "Chemistry">Chemistry</option>
+                                    <hr>
+                                    <option value = "Biology">Biology</option>
                                   </select>
-                            </label>
+                            <i class="fas fa-check"></i>
                     </div>
                     <button id="details-button">Book a FREE TRIAL</button>
                 </form>
@@ -205,6 +217,15 @@
                 $('nav').toggleClass('active')
             })
         })
+
+        $("#document").ready(function(){
+          $(".form-field").on("change", function(){
+        if ($(this).val().length > 0)
+            $(this).next("i").show();
+        else
+            $(this).next("i").hide();
+    });
+});
     </script>
     <script src="./js/main.js"></script>
 </body>
