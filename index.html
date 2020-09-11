@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="./assets/fontawesome-free-5.14.0-web/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./responsiveness.css"> -->
     <title>Level Up Academy</title>
@@ -56,20 +57,9 @@
                     <button id="blue">start a Free Trial</button>
                </div>
             </div>
-            <ul class="dot" data-wall-section-nav>
-                <div class="radios">
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-                    <li><input type="radio" id=""></li>
-
-                </div>
-                <i class="fas fa-arrow-down"></i>
-              </ul>
         </section>
         <!-- end of home -->
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <h3>Why LEVEL UP?</h3>
                 <div class="reasons">
                     <div class="actual-reason" id="hybrid-container">
@@ -104,7 +94,7 @@
         </section>
         <!-- end of about -->
 
-        <section id="clubs">
+        <section id="clubs" data-aos="fade-left">
             <div class="images">
                 <img src="./assets/img/clubs1.png" alt="clubs1" style="max-width: 40%;" id="drama">
                 <img src="./assets/img/clubs2.png" alt="clubs2" style="max-width: 40%;" id="sports">
@@ -123,7 +113,7 @@
             
             </section>
 
-        <section id="credentials">
+        <section id="credentials" data-aos="fade-right">
             <div class="cred-image">
                 <img src="./assets/img/lets-level-up.png" alt="lets-level-up" style="max-width: 80%;">
             </div>
@@ -176,7 +166,7 @@
             
         </section>
        
-        <section id="contact-us">
+        <section id="contact-us" data-aos="fade-down">
             <div class="contact-section-img">
                 <img src="./assets/img/contactus.png" alt="contact-us" style="max-width: 30%;">
             </div>
@@ -227,6 +217,13 @@
     });
 });
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+        });
+      </script>
     <script src="./js/main.js"></script>
 </body>
 </html>
