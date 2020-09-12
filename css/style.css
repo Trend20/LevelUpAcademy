@@ -1362,14 +1362,15 @@ a span{
 
 .team-image{
     display: flex;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-top: 50px;
 }
 
 .team-image >img{
-    max-width: 40%;
+    max-width: 80%;
     height: auto;
+    margin: auto;
 }
 
 .team-contents{
@@ -2031,14 +2032,16 @@ a span{
 
 .team-image{
     display: flex;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-top: 50px;
+    margin: auto;
 }
 
 .team-image >img{
     max-width: 40%;
     height: auto;
+    margin: auto;
 }
 
 .team-contents{
