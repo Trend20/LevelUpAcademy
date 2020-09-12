@@ -330,6 +330,7 @@ nav ul li a.active{
     align-items: center;
     margin-bottom: 50px;
     text-align: center;
+    height: auto;
 }
 
 .actual-reason{
@@ -338,6 +339,7 @@ nav ul li a.active{
     justify-content: center;
     align-items: center;
     width: 30%;
+    height: auto;
     position: relative;
     text-align: center;
 }
@@ -380,6 +382,7 @@ nav ul li a.active{
     margin-top: 60px;
     text-align: center;
     opacity: 1;
+    height: auto;
 }
 
 .actual-reason >p{
@@ -389,6 +392,7 @@ nav ul li a.active{
     letter-spacing: 1.2px;
     line-height: 1.3;
     font-family: Avenir;
+    height: auto;
 }
 /* end of about */
 
@@ -690,18 +694,22 @@ margin-top: 5px;
     margin-top: 100px 0px 50px 30px;
     position: relative;
     width: 100%;
+    height: auto;
 }
 
 .team-image{
     display: flex;
     width: 50%;
-    margin-left: 30px;
-    margin-top: 100px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .team-image >img{
-    max-width: 40%;
+    max-width: 30%;
     height: auto;
+    margin-bottom: 150px 0px 30px 0px;
 }
 
 .team-contents{
@@ -761,10 +769,12 @@ margin-top: 5px;
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 50px;
+    height: auto;
 }
 
 .contact-section-img{
     width: 40%;
+    height: auto;
 }
 
 .contact-section-img >img{
@@ -826,18 +836,6 @@ a span{
 .connect a img{
     cursor: pointer;
     margin-right: 15px;
-}
-
-.fa-phone-square-alt{
-    color: #19eb3c;
-}
-
-.fa-envelope-square{
-   color: #43d1eb;
-}
-
-.fa-whatsapp-square{
-    color: #19eb3c;
 }
 /* end of contact-us style */
 #footer{
@@ -1000,7 +998,7 @@ a span{
     
     #red{
       width: 40%;
-      height: 50px;
+      height: 40px;
       margin-right: 20px;
       border: none;
       border-radius: 50px;
@@ -1008,12 +1006,12 @@ a span{
       color: #fff;
       background: #f50808;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: .6rem;
       font-weight: bold;
     }
     #blue{
         width: 40%;
-        height: 50px;
+        height: 40px;
         margin-right: 20px;
         border: none;
         border-radius: 50px;
@@ -1021,7 +1019,7 @@ a span{
         color: #fff;
         background: #080cf5;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: .6rem;
         font-weight: bold;
       }
     
@@ -1168,7 +1166,7 @@ a span{
 #club-button{
     margin-top: 30px;
     width: 50%;
-    height: 50px;
+    height: 40px;
     outline: none;
     border: none;
     border-radius: 50px;
@@ -1177,7 +1175,7 @@ a span{
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 /* end of club responsive */
 
@@ -1222,7 +1220,7 @@ a span{
 #form{
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -1234,7 +1232,7 @@ a span{
 .names >input{
     width: 50%;
     margin-bottom: 10px;
-    height: 50px;
+    height: 40px;
     border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
@@ -1249,7 +1247,7 @@ a span{
 #number >input{
     width: 100%;
     margin-bottom: 10px;
-    height: 50px;
+    height: 40px;
     border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
@@ -1260,7 +1258,7 @@ a span{
 #id >input{
     width: 100%;
     margin-bottom: 10px;
-    height: 50px;
+    height: 40px;
     border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
@@ -1275,7 +1273,6 @@ a span{
 .select{
     display: flex;
     width: 100%;
-    padding: 10px;
 }
 .dropdown{
     display: block;
@@ -1287,7 +1284,7 @@ a span{
     outline: none;
 	padding: .6em 1.4em .5em .8em;
     width: 100%;
-    height: 50px;
+    height: 40px;
 	max-width: 100%;
 	box-sizing: border-box;
 	border: 1px solid #aaa;
@@ -1333,14 +1330,15 @@ a span{
 #details-button{
     margin: auto;
     margin-top: 20px;
-    width: 60%;
-    height: 60px;
+    width: 50%;
+    height: 40px;
     border: none;
     border-radius: 50px;
     background: #f50808;
     color: #fff;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: .8rem;
+    font-family: Agrandir;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -1410,7 +1408,7 @@ a span{
     margin-top: 20px;
     border: none;
     border-radius: 50px;
-    height: 50px;
+    height: 40px;
     outline: none;
     cursor: pointer;
     color: #ebebeb;
@@ -1502,17 +1500,6 @@ a span{
     margin-right: 15px;
     max-width: 5%;
 }
-
-.fa-phone-square-alt{
-    color: #70d170;
-    
-}
-
-
-.fa-whatsapp-square{
-    color: #68d868;
-}
-
 /* end of responsive contact-us */
 
 /* responsive footer */
@@ -1635,10 +1622,9 @@ a span{
     #section-text{
         display: flex;
         flex-direction: column;
-        /* justify-content: space-around; */
         background: var(--main-paragraph-bg-color);
         width: 95%;
-        height: 200px;
+        height: auto;
         padding: 20px;
         border: none;
         border-radius: 7px;
@@ -1655,6 +1641,7 @@ a span{
         color: var(--main-text-color);
         width: 100%;
         font-size: 1rem;
+        padding: 10px;
     }
     
     .section-buttons{
@@ -1665,11 +1652,12 @@ a span{
         justify-content: center;
         text-align: center;
         align-items: center;
+        height: auto;
     }
     
     #red{
       width: 40%;
-      height: 50px;
+      height: 40px;
       margin-right: 20px;
       border: none;
       border-radius: 50px;
@@ -1677,12 +1665,13 @@ a span{
       color: #fff;
       background: #f50808;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: .8rem;
       font-weight: bold;
+      padding: 5px;
     }
     #blue{
         width: 40%;
-        height: 50px;
+        height: 40px;
         margin-right: 20px;
         border: none;
         border-radius: 50px;
@@ -1690,8 +1679,9 @@ a span{
         color: #fff;
         background: #080cf5;
         cursor: pointer;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: bold;
+        padding: 5px;
       }
     
 /* end of home section */
@@ -1817,7 +1807,7 @@ a span{
 .club-text{
     background: var(--main-paragraph-bg-color);
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -1832,12 +1822,13 @@ a span{
     width: 100%;
     font-family: Avenir;
     font-size: 1rem;
+    padding: 10px;
 }
 
 #club-button{
     margin-top: 30px;
-    width: 50%;
-    height: 50px;
+    width: 40%;
+    height: 40px;
     outline: none;
     border: none;
     border-radius: 50px;
@@ -1846,7 +1837,7 @@ a span{
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 /* end of club responsive */
 
@@ -1859,6 +1850,7 @@ a span{
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
+    height: auto;
 }
 
 .cred-image{
@@ -1867,12 +1859,14 @@ a span{
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: auto;
 }
 
 .details{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1883,6 +1877,7 @@ a span{
     font-size: 2.5rem;
     font-weight: 300;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1891,19 +1886,21 @@ a span{
 #form{
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     justify-content: center;
+    height: auto;
 }
 
 .names{
     display: flex;
     width: 100%;
+    height: auto;
 }
 
 .names >input{
     width: 50%;
     margin-bottom: 10px;
-    height: 50px;
+    height: 40px;
     border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
@@ -1918,7 +1915,7 @@ a span{
 #number >input{
     width: 100%;
     margin-bottom: 10px;
-    height: 50px;
+    height: 40px;
     border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
@@ -1929,7 +1926,7 @@ a span{
 #id >input{
     width: 100%;
     margin-bottom: 10px;
-    height: 50px;
+    height: 40px;
     border: 1px solid #b4b1b1;
     border-radius: 50px;
     font-size: 1rem;
@@ -1956,7 +1953,7 @@ a span{
     outline: none;
 	padding: .6em 1.4em .5em .8em;
     width: 100%;
-    height: 50px;
+    height: 40px;
 	max-width: 100%;
 	box-sizing: border-box;
 	border: 1px solid #aaa;
@@ -2002,14 +1999,17 @@ a span{
 #details-button{
     margin: auto;
     margin-top: 20px;
-    width: 60%;
-    height: 60px;
+    width: 50%;
+    height: 40px;
     border: none;
     border-radius: 50px;
     background: #f50808;
+    opacity: 0.8;
     color: #fff;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: .8rem;
+    font-family: Agrandir;
+    padding: 3px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -2026,12 +2026,12 @@ a span{
     flex-direction: column;
     position: relative;
     width: 100%;
-    /* height: 150px; */
+    height: auto;
 }
 
 .team-image{
     display: flex;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-top: 50px 0px 30px 0px;
     margin: auto;
@@ -2039,9 +2039,9 @@ a span{
 }
 
 .team-image >img{
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
-    margin-bottom: 30px;
+    margin: auto;
 }
 
 .team-contents{
@@ -2080,12 +2080,12 @@ a span{
     margin-top: 20px;
     border: none;
     border-radius: 50px;
-    height: 50px;
+    height: 40px;
     outline: none;
     cursor: pointer;
     color: #ebebeb;
     background: #e9130c;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: bold;
     font-family: Agrandir;
     text-align: center;
@@ -2100,6 +2100,7 @@ a span{
 #contact-us{
     display: flex;
     width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -2111,7 +2112,6 @@ a span{
     width: 100%;
     display: flex;
     text-align: center;
-    height: auto;
     position: relative;
 }
 
@@ -2122,7 +2122,7 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: auto; */
+    height: auto;
     position: absolute;
     bottom: 50%;
     top: 20%;
@@ -2136,6 +2136,7 @@ a span{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     margin-top: 200px;
 }
 
@@ -2150,7 +2151,7 @@ a span{
 
 .connect{
    width: 100%;
-   /* height: 180px; */
+   height: auto;
    display: flex;
    flex-direction: column;
    padding: 5px;
@@ -2162,27 +2163,18 @@ a span{
    font-family: var(--main-text-font);
 }
 
-.connect i{
-    margin-right: 10px;
-    font-size: 2rem;
+connect a{
+    padding: 20px;
+    height: auto;
+    width: 100%;
 }
 
-.connect p img{
+.connect a img{
     cursor: pointer;
     margin-right: 15px;
     max-width: 5%;
+    height: auto;
 }
-
-.fa-phone-square-alt{
-    color: #70d170;
-    
-}
-
-
-.fa-whatsapp-square{
-    color: #68d868;
-}
-
 /* end of responsive contact-us */
 
 /* responsive footer */
@@ -2302,7 +2294,7 @@ a span{
         justify-content: space-around;
         background: var(--main-paragraph-bg-color);
         width: 100%;
-        height: 200px;
+        height: auto;
         padding: 20px;
         border: none;
         border-radius: 7px;
@@ -2313,6 +2305,7 @@ a span{
     #section-text >p{
         letter-spacing: 1px;
         line-height: 1.2;
+        padding: 10px;
         font-weight: 500;
         font-family: 'Montserrat', sans-serif;
         color: var(--main-text-color);
@@ -2375,6 +2368,7 @@ a span{
   margin-bottom: 50px;
   font-size: 2rem;
   font-weight: 700;
+  font-family: Agrandir;
 }
 
 .content{
@@ -2383,6 +2377,7 @@ a span{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
 }
 
 .reasons{
@@ -2392,6 +2387,18 @@ a span{
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    height: auto;
+}
+.wrapper{
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 150px;
+}
+
+#hybrid-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .actual-reason{
@@ -2400,23 +2407,27 @@ a span{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     padding-top: 30px;
     position: relative;
     text-align: center;
 }
 
 .actual-reason >img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 30px;
 }
 
 .actual-reason >h3{
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1rem;
+    height: auto;
+    width: 100%;
+    font-size: .8rem;
     letter-spacing: 1.2px;
     line-height: 1.8;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2431,6 +2442,7 @@ a span{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 /* end of about responsiveness */
@@ -2464,6 +2476,7 @@ a span{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     align-items: center;
     text-align: center;
 }
@@ -2478,7 +2491,7 @@ a span{
 .club-text{
     background: var(--main-paragraph-bg-color);
     width: 95%;
-    height: 200px;
+    height: auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -2493,6 +2506,7 @@ a span{
     letter-spacing: 1.5px;
     line-height: 1.3;
     width: 100%;
+    padding: 10px;
 }
 
 #club-button{
@@ -2552,7 +2566,7 @@ a span{
 #form{
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -2696,6 +2710,7 @@ a span{
     width: 100%;
     height: auto;
     margin-top: 50px;
+    margin: auto;
 }
 
 .team-image >img{
@@ -2722,7 +2737,7 @@ a span{
 
 .team-role{
     width: 100%;
-    height: 180px;
+    height: auto;
     background: var(--main-paragraph-bg-color);
     border-radius: 10px;
     margin-top: 30px;
@@ -2733,6 +2748,7 @@ a span{
     line-height: 1.5;
     font-family: Avenir;
     text-align: center;
+    padding: 10px;
 }
 
 #team-btn{
@@ -2744,7 +2760,7 @@ a span{
     outline: none;
     cursor: pointer;
     color: #ebebeb;
-    background: #e9130c;
+    background: #f00c04;
     font-size: 1rem;
     font-weight: bold;
     font-family: Agrandir;
@@ -2790,6 +2806,7 @@ a span{
     align-items: center;
     width: 100%;
     margin-top: 10px;
+    height: auto;
 }
 
 .contact-details >h3{
@@ -2804,7 +2821,7 @@ a span{
 .connect{
    margin: 20px;
    width: 95%;
-   height: 180px;
+   height: auto;
    display: flex;
    flex-direction: column;
    padding: 10px;
@@ -2816,25 +2833,9 @@ a span{
    font-family: var(--main-text-font);
 }
 
-.connect i{
+.connect img{
     margin-right: 10px;
     font-size: 2rem;
-}
-
-.fa-phone-square-alt{
-    color: #70d170;
-}
-
-.fa-envelope-square{
-   color: #43d1eb;
-}
-
-.fa-whatsapp-square{
-    color: #68d868;
-}
-
-.fa-map-marker-alt{
-    color: #fff;
 }
 
 /* end of responsive contact-us */
@@ -3064,7 +3065,7 @@ a span{
     }
     
     #hybrid-container >img{
-        height: 130px;
+        height: auto;
     }
     /* end of about */
     
@@ -3089,6 +3090,7 @@ a span{
         display: flex;
         flex-direction: column;
         width: 50%;
+        height: auto;
     }
     
     .club-description >h3{
@@ -3101,7 +3103,7 @@ a span{
     .club-text{
         background: var(--main-paragraph-bg-color);
         width: 95%;
-        height: 200px;
+        height: auto;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -3116,6 +3118,7 @@ a span{
         letter-spacing: 1.5px;
         line-height: 1.3;
         width: 100%;
+        padding: 10px;
     }
     
     #club-button{
@@ -3342,7 +3345,7 @@ a span{
         outline: none;
         cursor: pointer;
         color: #ebebeb;
-        background: #ff3c00;
+        background: #f10606;
         font-size: 1rem;
         font-weight: bold;
         font-family: Agrandir;
@@ -3393,7 +3396,7 @@ a span{
     .connect{
         margin-right: 50px;
        width: 95%;
-       height: 180px;
+       height: auto;
        display: flex;
        flex-direction: column;
        padding: 10px;
@@ -3405,24 +3408,10 @@ a span{
        font-family: var(--main-text-font);
     }
     
-    .connect i{
+    .connect img{
         margin-right: 20px;
         font-size: 2rem;
-    }
-    
-    .fa-phone-square-alt{
-        color: #70d170;
-    }
-    
-    .fa-envelope-square{
-       color: #43d1eb;
-    }
-    
-    .fa-whatsapp-square{
-        color: #68d868;
-    }
-    .fa-map-marker-alt{
-        color: #edf3ed;
+        padding: 10px;
     }
     /* end of contact-us style */
     #footer{
@@ -3432,7 +3421,7 @@ a span{
         align-items: center;
         background: #db0e0e;
         color: #fff;
-        height: 150px;
+        height: auto;
     }
     
     .footer-text >p{
