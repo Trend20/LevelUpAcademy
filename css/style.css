@@ -2206,14 +2206,16 @@ a span{
 .team-image{
     display: flex;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    height: auto;
     margin: auto;
-    position: relative;
 }
 
 .team-image >img{
     max-width: 100%;
     height: auto;
-    margin: auto;
 }
 
 .team-contents{
