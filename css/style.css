@@ -2206,8 +2206,6 @@ a span{
 .team-image{
     display: flex;
     width: 100%;
-    height: auto;
-    margin-top: 50px 0px 30px 0px;
     margin: auto;
     position: relative;
 }
